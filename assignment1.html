@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" style="font-family: sans-serif;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMR</title>
+    <script src="assignment1.js"></script>
+</head>
+<body style="background-color:azure; margin:20%">
+    <div>
+        <h1>Basal Metabolic Rate (BMR) Calculator</h1>
+        <div>
+            <form>
+                Gender
+                <select id='gender' style="margin-bottom: 2%">
+                    <option value="woman">Woman</option>
+                    <option value="man">Man</option>
+                </select>
+                <br>
+                Age
+                <input id='age' name="age" type="number" style="margin-bottom: 2%">
+                <br>
+                Height in cm
+                <input id='height' name="height" type="number" style="margin-bottom: 2%">
+                <br>
+                Weight in kg
+                <input id='weight' name="weight" type="number" style="margin-bottom: 2%">
+                <br>
+                Activity level
+                <select id='level' style="margin-bottom: 2%">
+                    <option value="sedentary">Sedentary</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="Active">Active</option>
+                </select>
+                <br>
+                <input style="margin-bottom: 2%" type="button" onclick="bmrCalc(document.getElementById('age').value, document.getElementById('gender').value, document.getElementById('height').value, document.getElementById('weight').value, document.getElementById('level').value)" value="Calculate">
+            </form>
+            <br>
+            <p id="output"></p>
+        </div>
+    </div>
+    
+</body>
+</html>
+
